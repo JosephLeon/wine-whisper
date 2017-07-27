@@ -1,0 +1,19 @@
+<p>
+  There are {{ wineCount }} wines graded so far.
+</p>
+
+<ul>
+  <li *ngFor="let wine of wines">
+    <h3>{{ wine.name | uppercase }}</h3>
+    <p>{{ wine.year }}</p>
+    <p>{{ wine.price | currency:"ILS":true }}</p>
+    <p *ngIf="wine.rating >= 4">Recommended!</p>
+  </li>
+</ul>
+
+<h3>Wine JSON</h3>
+<ul>
+  <li *ngFor="let wine of wines">
+    <p>{{ wine | json }}</p>
+  </li>
+</ul>
