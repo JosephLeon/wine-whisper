@@ -32,6 +32,7 @@ export class WinesComponent implements OnInit {
 
   wines = WINES
   wineCount = this.wines.length
+  title = 'Wines'
 
   constructor() { }
 
