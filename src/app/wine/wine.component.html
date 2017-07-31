@@ -1,0 +1,11 @@
+<h1>Name goes below</h1>
+<p>
+  {{ wine_data }}
+</p>
+
+<h3>Wine JSON data</h3>
+<ul>
+  <li *ngFor="let wine of wine_data">
+    <p>{{ wine | json }}</p>
+  </li>
+</ul>
