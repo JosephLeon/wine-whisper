@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Component } from '@angular/core';
-// import appRoutes from './app.routes';
 import { Routing } from './app.routes';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,8 +18,8 @@ import { AddWineComponent } from './add-wine/add-wine.component';
   ],
   imports: [
     BrowserModule,
-    Routing
-    // appRoutes
+    Routing,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
