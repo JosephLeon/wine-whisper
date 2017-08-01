@@ -10,7 +10,7 @@
 
     <ul>
       <li *ngFor="let wine of wines_data">
-        <h3>{{ wine.name | uppercase }}</h3>
+        <h3><a href="/wine/{{ wine.id }}">{{ wine.name | uppercase }}</a></h3>
         <p>{{ wine.year }}</p>
         <p>{{ wine.price | currency:"ILS":true }}</p>
         <p *ngIf="wine.rating >= 4">Recommended!</p>
